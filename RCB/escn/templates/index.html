@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<style>
+    div{
+        width: 100%;
+        background-color:lime;
+        }
+    img{
+        width: 198px;
+        height: 200px;
+        border: black solid 1px;
+        padding-left: 1px;
+
+    }
+</style>
+<body>
+    <div>
+        <a href="{% url 'register' %}"><img src="{% static 'images/create.jpg' %}" alt=""></a>
+        <a href="{% url 'pin' %}"><img src="{% static 'images/pin.jpg' %}" alt=""></a>
+        <a href="{% url 'checkbalance' %}"><img src="{% static 'images/balence.jpg' %}" alt=""></a>
+        <a href="{% url 'deposit' %}"><img src="{% static 'images/deposit.jpg' %}" alt=""></a>
+        <a href="{% url 'withdraw' %}"> <img src="{% static 'images/money.png' %}" alt=""></a>
+        <a href="{% url 'acc_transfer'%}"><img src="{% static 'images/account.jpg' %}" alt=""></a>
+    </div>
+</body>
+</html>
